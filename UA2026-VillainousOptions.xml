@@ -5,14 +5,23 @@
     <description>Playtest subclasses from Unearthed Arcana 2026: Pestilence Domain (Cleric), Circle of the Titan (Druid), Hell Knight (Fighter), Demonic Sorcery (Sorcerer).</description>
     <author url="http://dnd.wizards.com/articles/features">Wizards of the Coast</author>
     <update version="0.0.1">
-      <file name="UA2026-VillainousOptions.xml" url="local/UA2026-VillainousOptions.xml" />
+      <file name="UA2026-VillainousOptions.xml" url="https://raw.githubusercontent.com/SaifElDin080/aurora-ua2026-villainous-options/main/UA2026-VillainousOptions.xml" />
     </update>
   </info>
 
-  <!-- =========================
-       Cleric: Pestilence Domain
-       ========================= -->
-  <element name="Pestilence Domain" type="Archetype" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_DOMAIN">
+  <!-- Source entry -->
+  <element name="Unearthed Arcana 2026 Villainous Options" type="Source" id="ID_WOTC_UA2026_SOURCE">
+    <description>
+      <p>Playtest material: Pestilence Domain (Cleric), Circle of the Titan (Druid), Hell Knight (Fighter), Demonic Sorcery (Sorcerer).</p>
+    </description>
+    <setters>
+      <set name="abbreviation">UA2026</set>
+      <set name="playtest">true</set>
+    </setters>
+  </element>
+
+  <!-- Cleric: Pestilence Domain -->
+  <element name="Pestilence Domain" type="Archetype" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_DOMAIN">
     <supports>Cleric</supports>
     <description>
       <p>Clerics of the Pestilence Domain harness supernatural plague and decay to erode their enemies' vitality.</p>
@@ -29,7 +38,7 @@
     </rules>
   </element>
 
-  <element name="Blight Weaver" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_BLIGHT_WEAVER">
+  <element name="Blight Weaver" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_BLIGHT_WEAVER">
     <description>
       <p><b>Inoculated Soul.</b> You have Resistance to Necrotic and Poison damage, and you can't be infected by magical contagions.</p>
       <p><b>Rot and Fester.</b> Damage from your Cleric spells and Cleric features ignores Resistance to Necrotic and Poison damage. When you cast a Cleric spell or use a Cleric feature that deals Necrotic or Poison damage, you can change that damage to the other type.</p>
@@ -44,7 +53,7 @@
     </rules>
   </element>
 
-  <element name="Pestilence Domain Spells" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_SPELLS">
+  <element name="Pestilence Domain Spells" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_SPELLS">
     <description>
       <p>Domain spells always prepared.</p>
       <ul>
@@ -68,7 +77,7 @@
     </rules>
   </element>
 
-  <element name="Plague Blessing" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_PLAGUE_BLESSING">
+  <element name="Plague Blessing" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_PLAGUE_BLESSING">
     <description>
       <p>As a Magic action, present your holy symbol and expend a use of Channel Divinity to manifest a 5-foot Emanation of withering plague that surrounds you or one willing creature you touch for 1 minute. Each creature you choose that starts its turn in the Emanation must succeed on a Constitution saving throw against your spell save DC or gain 1 level of Exhaustion (this feature can't increase a creature's Exhaustion level higher than your Wisdom modifier, minimum 1).</p>
       <p>Choose a symptom from the Plague Symptoms table.</p>
@@ -83,7 +92,7 @@
     </rules>
   </element>
 
-  <element name="Plague Symptoms" type="Table" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_PESTILENCE_SYMPTOMS">
+  <element name="Plague Symptoms" type="Table" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_PESTILENCE_SYMPTOMS">
     <description>
       <p>Roll 1d6 to determine the visible symptom of the plague.</p>
     </description>
@@ -92,7 +101,7 @@
     </sheet>
   </element>
 
-  <element name="Virulent Burst" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_VIRULENT_BURST">
+  <element name="Virulent Burst" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_VIRULENT_BURST">
     <description>
       <p>Reaction: When an enemy within 60 feet is reduced to 0 hit points, you can take a Reaction to cause plague to burst from that creature, creating a 10-foot Emanation originating from the enemy (20 feet if the enemy had at least 1 Exhaustion level). Each creature of your choice in the Emanation makes a Constitution saving throw against your spell save DC. On a failed save, choose one effect: Putrid Shock (Incapacitated until the end of its next turn; Speed 0) or Toxic Infection (3d6 Necrotic or Poison damage, your choice).</p>
       <p>You can use this feature a number of times equal to your Wisdom modifier (minimum once). You regain all uses on a Long Rest.</p>
@@ -109,7 +118,7 @@
     </rules>
   </element>
 
-  <element name="Vermin Form" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_VERMIN_FORM">
+  <element name="Vermin Form" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_CLERIC_PESTILENCE_VERMIN_FORM">
     <description>
       <p>Bonus Action: Shape-shift into a Medium swarm of Tiny pests for up to 10 minutes. You retain your personality and ability to speak. Equipment doesn't transform but can be used. Your game statistics remain the same except:</p>
       <ul>
@@ -131,10 +140,8 @@
     </rules>
   </element>
 
-  <!-- =========================
-       Druid: Circle of the Titan
-       ========================= -->
-  <element name="Circle of the Titan" type="Archetype" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN">
+  <!-- Druid: Circle of the Titan -->
+  <element name="Circle of the Titan" type="Archetype" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN">
     <supports>Druid</supports>
     <description>
       <p>Druids of the Circle of the Titan assume towering, monstrous forms to mete out cataclysmic retribution and restore the natural order.</p>
@@ -151,9 +158,9 @@
     </rules>
   </element>
 
-  <element name="Titan Spells" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_SPELLS">
+  <element name="Titan Spells" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_SPELLS">
     <description>
-      <p>Domain spells always prepared while a Circle of the Titan druid.</p>
+      <p>Circle of the Titan spells always prepared.</p>
       <ul>
         <li>3rd: Cure Wounds; Longstrider; Thaumaturgy</li>
         <li>5th: Fear</li>
@@ -171,9 +178,9 @@
     </rules>
   </element>
 
-  <element name="Titan Form" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_FORM">
+  <element name="Titan Form" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_FORM">
     <description>
-      <p>When you use Wild Shape, you can adopt a Titan Form: Behemoth, Leviathan, or Insectoid. You determine appearance and may roll or choose from the Titan Appearance table. You can cast Titan Spells while in Titan Form.</p>
+      <p>When you use Wild Shape, you can adopt a Titan Form: Behemoth, Leviathan, or Insectoid. You can cast Titan Spells while in Titan Form. See Titan Appearance table for cosmetic options.</p>
     </description>
     <sheet>
       <description>Use Wild Shape to assume Titan Form (Behemoth, Leviathan, Insectoid). See stat blocks for each form's benefits and actions.</description>
@@ -183,7 +190,7 @@
     </rules>
   </element>
 
-  <element name="Titan Appearance" type="Table" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_APPEARANCE">
+  <element name="Titan Appearance" type="Table" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_APPEARANCE">
     <description>
       <p>Roll 1d4 and consult the table for appearance traits for each Titan Form.</p>
     </description>
@@ -192,9 +199,9 @@
     </sheet>
   </element>
 
-  <element name="Behemoth Form" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_BEHEMOTH">
+  <element name="Behemoth Form" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_BEHEMOTH">
     <description>
-      <p>Large/Huge/Gargantuan monstrosity form (size scales with druid level). AC 11 + Wisdom modifier. Temp HP = 2 × druid level. Speed 40 ft., Climb 40 ft. Strength and Dexterity equal your Wisdom score. Traits: Rampager (prone or 2d6 bludgeoning if already prone), Siege Monster. Actions: Multiattack (2 Rend), Rend (1d8 + Wis mod slashing), Incandescent Breath (expend spell slot; Dex save; 2d8 radiant per slot level + Wis mod; half on success).</p>
+      <p>Behemoth Titan Form stat block summary: AC 11 + Wisdom modifier; Temp HP = 2 × druid level; Speed 40 ft., Climb 40 ft.; Strength and Dexterity equal your Wisdom; Multiattack (2 Rend), Rend (1d8 + Wis mod slashing), Incandescent Breath (expend spell slot; Dex save; 2d8 radiant per slot level + Wis mod; half on success). Traits: Rampager, Siege Monster.</p>
     </description>
     <sheet>
       <description>Behemoth Titan Form: multiattack, rend, incandescent breath; Rampager and Siege Monster traits; size increases at higher levels.</description>
@@ -206,9 +213,9 @@
     </rules>
   </element>
 
-  <element name="Leviathan Form" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_LEVIATHAN">
+  <element name="Leviathan Form" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_LEVIATHAN">
     <description>
-      <p>Large/Huge/Gargantuan monstrosity form. AC 10 + Wisdom modifier. Temp HP = 2 × druid level. Speed 40 ft., Swim 40 ft. Traits: Amphibious; Toxic Stench (10-ft emanation; Con save or 2d4 poison and Poisoned until next turn). Actions: Multiattack (2 Rend), Rend (1d8 + Wis mod bludgeoning). Reaction: Ink Cloud (expend spell slot; 15-ft cube heavily obscured; move up to Speed).</p>
+      <p>Leviathan Titan Form stat block summary: AC 10 + Wisdom modifier; Temp HP = 2 × druid level; Speed 40 ft., Swim 40 ft.; Multiattack (2 Rend), Rend (1d8 + Wis mod bludgeoning). Traits: Amphibious; Toxic Stench (10-ft emanation; Con save or 2d4 poison and Poisoned until next turn). Reaction: Ink Cloud (expend spell slot; 15-ft cube heavily obscured; move up to Speed).</p>
     </description>
     <sheet>
       <description>Leviathan Titan Form: amphibious, toxic stench, multiattack, rend, ink cloud reaction.</description>
@@ -219,9 +226,9 @@
     </rules>
   </element>
 
-  <element name="Insectoid Form" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_INSECTOID">
+  <element name="Insectoid Form" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_TITAN_INSECTOID">
     <description>
-      <p>Large/Huge/Gargantuan monstrosity form. AC 8 + Wisdom modifier. Temp HP = 2 × druid level. Speed 40 ft., Fly 40 ft. Traits: Flyby; Hive Mind (telepathic link with up to druid level creatures). Actions: Multiattack (2 Rend), Rend (1d8 + Wis mod piercing), Energizing Pollen (expend spell slot; restore HP equal to 2d8 + 5 × slot level divided among chosen creatures within 15 ft).</p>
+      <p>Insectoid Titan Form stat block summary: AC 8 + Wisdom modifier; Temp HP = 2 × druid level; Speed 40 ft., Fly 40 ft.; Multiattack (2 Rend), Rend (1d8 + Wis mod piercing); Energizing Pollen (expend spell slot; restore HP equal to 2d8 + 5 × slot level divided among chosen creatures within 15 ft). Traits: Flyby; Hive Mind (telepathic link with up to druid level creatures).</p>
     </description>
     <sheet>
       <description>Insectoid Titan Form: flyby, hive mind, multiattack, rend, energizing pollen.</description>
@@ -232,9 +239,9 @@
     </rules>
   </element>
 
-  <element name="Dire Impact" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_DIRE_IMPACT">
+  <element name="Dire Impact" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_DIRE_IMPACT">
     <description>
-      <p>Elemental Rend: Titan Form's Rend can deal Acid, Cold, Fire, Lightning, or Thunder instead of its normal type. Shock Wave: Immediately after assuming Titan Form or by using a Bonus Action to expend a level 1+ spell slot while in Titan Form, create a 15-foot Emanation; creatures fail Con save vs your spell save DC or fall Prone.</p>
+      <p>Elemental Rend: Titan Form's Rend can deal Acid, Cold, Fire, Lightning, or Thunder instead of its normal type. Shock Wave: After assuming Titan Form or by using a Bonus Action to expend a level 1+ spell slot while in Titan Form, create a 15-foot Emanation; creatures fail Con save vs your spell save DC or fall Prone.</p>
     </description>
     <sheet>
       <description>Elemental Rend and Shock Wave (15-ft emanation; Con save or Prone).</description>
@@ -244,9 +251,9 @@
     </rules>
   </element>
 
-  <element name="Primal Havoc" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_PRIMAL_HAVOC">
+  <element name="Primal Havoc" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_PRIMAL_HAVOC">
     <description>
-      <p>Improved Titan Form: You can choose to become Huge when assuming Titan Form. Each Titan Form gains an additional benefit. Above It All: While Huge or larger in Titan Form, difficult terrain from heavy snow, ice, rubble, or undergrowth doesn't cost extra movement.</p>
+      <p>Improved Titan Form: You can choose to become Huge when assuming Titan Form. Above It All: While Huge or larger in Titan Form, difficult terrain from heavy snow, ice, rubble, or undergrowth doesn't cost extra movement.</p>
     </description>
     <sheet>
       <description>Choose to become Huge in Titan Form; difficult terrain exceptions while Huge or larger.</description>
@@ -256,7 +263,7 @@
     </rules>
   </element>
 
-  <element name="Monstrous Appetite" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_MONSTROUS_APPETITE">
+  <element name="Monstrous Appetite" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_DRUID_TITAN_MONSTROUS_APPETITE">
     <description>
       <p>Gargantuan Size: You can choose to become Gargantuan when assuming Titan Form. Grappling Rend: Once per turn when Huge or larger and you hit with Rend, you can Grapple the target (escape DC = your spell save DC). Swallow: As a Bonus Action while Gargantuan, choose one Large or smaller creature Grappled by you; it makes a Strength save vs your spell save DC or is swallowed (Blinded, Restrained, Total Cover vs outside; takes 2d8 acid at start of each of your turns). Number swallowed = your Wisdom modifier (minimum 1). You must maintain Concentration to hold swallowed creatures.</p>
     </description>
@@ -268,10 +275,8 @@
     </rules>
   </element>
 
-  <!-- =========================
-       Fighter: Hell Knight
-       ========================= -->
-  <element name="Hell Knight" type="Archetype" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT">
+  <!-- Fighter: Hell Knight -->
+  <element name="Hell Knight" type="Archetype" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT">
     <supports>Fighter</supports>
     <description>
       <p>Hell Knights are champions of archdevils and other fiends, wielding hellfire and infernal wounds.</p>
@@ -292,7 +297,7 @@
     </rules>
   </element>
 
-  <element name="Diabolical Gift" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_DIABOLICAL_GIFT">
+  <element name="Diabolical Gift" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_DIABOLICAL_GIFT">
     <description>
       <p>Devil's Sight: You can see normally in dim light and darkness (magical and nonmagical) within 120 feet. Devil's Tongue: You know Infernal; if you already know it, learn another language of your choice.</p>
     </description>
@@ -305,9 +310,9 @@
     </rules>
   </element>
 
-  <element name="Hellfire Weapon" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_HELLFIRE_WEAPON">
+  <element name="Hellfire Weapon" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_HELLFIRE_WEAPON">
     <description>
-      <p>When you take the Attack action, you can imbue one weapon you are holding with hellfire for 10 minutes (or until you end it, die, or the weapon is >5 ft away for 1 minute). While transformed, the weapon emits dim light in a 5-foot emanation and can deal Fire damage instead of its normal type.</p>
+      <p>When you take the Attack action, you can imbue one weapon you are holding with hellfire for 10 minutes. While transformed, the weapon emits dim light in a 5-foot emanation and can deal Fire damage instead of its normal type.</p>
     </description>
     <sheet>
       <description>Imbue a weapon with hellfire for 10 minutes; weapon can deal Fire damage and emits dim light (5 ft).</description>
@@ -318,7 +323,7 @@
     </rules>
   </element>
 
-  <element name="Infernal Wound" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_INFERNAL_WOUND">
+  <element name="Infernal Wound" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_INFERNAL_WOUND">
     <description>
       <p>Infernal Wound Die: d6. Once per turn when you hit with your Hellfire Weapon, you can deal extra Fire damage equal to one roll of your Infernal Wound Die and give the target an infernal wound. While wounded, the target takes Fire damage equal to one roll of your Infernal Wound Die at the start of each of its turns. This lasts 1 minute, until the target regains hit points, or until the wound is staunched by the target or a creature within 5 ft. A target can be affected by only one instance at a time.</p>
       <p>You can use this feature a number of times equal to your Constitution modifier (minimum once). You regain uses on a Short or Long Rest.</p>
@@ -332,7 +337,7 @@
     </rules>
   </element>
 
-  <element name="Advanced Wounds" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_ADVANCED_WOUNDS">
+  <element name="Advanced Wounds" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_ADVANCED_WOUNDS">
     <description>
       <p>When you roll your Infernal Wound Die and roll a 6, you can apply one of: Purulence of Minauros (5-ft emanation; creatures take Acid damage equal to your Con modifier; target Poisoned until start of its next turn), Rupture of Cania (Force damage equal to your Con modifier), or Stygian Gangrene (Cold damage equal to your Con modifier and target can't take Reactions until start of its next turn).</p>
     </description>
@@ -344,7 +349,7 @@
     </rules>
   </element>
 
-  <element name="Hell-Forged Equipment" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_HELLFORGED_EQUIPMENT">
+  <element name="Hell-Forged Equipment" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_HELLFORGED_EQUIPMENT">
     <description>
       <p>While wearing armor or wielding a shield, you have Resistance to Fire damage. Unholy Fire: Damage from your weapon attacks and Fighter features ignores Resistance to Fire damage.</p>
     </description>
@@ -357,7 +362,7 @@
     </rules>
   </element>
 
-  <element name="Hellfire Surge" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_HELLFIRE_SURGE">
+  <element name="Hellfire Surge" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_HELLFIRE_SURGE">
     <description>
       <p>When you use Action Surge while wearing armor or wielding a shield, you can superheat your equipment, causing it to erupt with hellfire in a 10-foot Emanation originating from you. Each creature of your choice in the Emanation must succeed on a Dexterity saving throw (DC = 8 + your Constitution modifier + proficiency bonus) or take Fire damage equal to one roll of your Infernal Wound Die and be burning. On success, they take half damage.</p>
     </description>
@@ -370,7 +375,7 @@
     </rules>
   </element>
 
-  <element name="Blister of Avernus" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_BLISTER_AVERNUS">
+  <element name="Blister of Avernus" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_BLISTER_AVERNUS">
     <description>
       <p>When you roll a 6 on your Infernal Wound Die, you can roll another d6 and add it to the damage. The maximum number of d6s you can add to the Infernal Wound's damage on a turn is three.</p>
     </description>
@@ -382,7 +387,7 @@
     </rules>
   </element>
 
-  <element name="Hellfire Condemnation" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_CONDEMNATION">
+  <element name="Hellfire Condemnation" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_CONDEMNATION">
     <description>
       <p>Whenever damage from your Hellfire Weapon or Infernal Wound reduces a creature to 0 hit points, the creature dies and its soul rises from the River Styx as a Lemure in a layer of the Nine Hells of your choice in 1d4 hours. If the creature isn't revived before then, only a Wish spell can return it to life.</p>
     </description>
@@ -394,7 +399,7 @@
     </rules>
   </element>
 
-  <element name="Infernal Bargain" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_BARGAIN">
+  <element name="Infernal Bargain" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_FIGHTER_HELLKNIGHT_BARGAIN">
     <description>
       <p>When you roll your Infernal Wound Die, you can treat a roll of 1 as a 6.</p>
     </description>
@@ -406,10 +411,8 @@
     </rules>
   </element>
 
-  <!-- =========================
-       Sorcerer: Demonic Sorcery
-       ========================= -->
-  <element name="Demonic Sorcery" type="Archetype" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_DEMONIC_SORCERY">
+  <!-- Sorcerer: Demonic Sorcery -->
+  <element name="Demonic Sorcery" type="Archetype" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_DEMONIC_SORCERY">
     <supports>Sorcerer</supports>
     <description>
       <p>The corruptive magic of demons courses through you, making you a conduit for the Abyss and its horrors.</p>
@@ -426,7 +429,7 @@
     </rules>
   </element>
 
-  <element name="Abyssal Manifestations" type="Table" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_DEMONIC_MANIFESTATIONS">
+  <element name="Abyssal Manifestations" type="Table" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_DEMONIC_MANIFESTATIONS">
     <description>
       <p>Roll 1d6 to determine a physical manifestation when you channel demonic power.</p>
     </description>
@@ -435,7 +438,7 @@
     </sheet>
   </element>
 
-  <element name="Abyssal Rupture" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_DEMONIC_RUPTURE">
+  <element name="Abyssal Rupture" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_DEMONIC_RUPTURE">
     <description>
       <p>When you spend at least 1 Sorcery Point as part of a Magic action or Bonus Action on your turn, you can unleash one of the following once per turn: Demonic Lash (1d4 slashing and pull up to 10 ft if Large or smaller) or Fiendish Carapace (until start of your next turn, attacks against you have Disadvantage).</p>
     </description>
@@ -448,7 +451,7 @@
     </rules>
   </element>
 
-  <element name="Demonic Spells" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_DEMONIC_SPELLS">
+  <element name="Demonic Spells" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_DEMONIC_SPELLS">
     <description>
       <p>Domain spells always prepared.</p>
       <ul>
@@ -472,7 +475,7 @@
     </rules>
   </element>
 
-  <element name="Abyssal Aura" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_ABYSSAL_AURA">
+  <element name="Abyssal Aura" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_ABYSSAL_AURA">
     <description>
       <p>When you use Innate Sorcery, you can infuse the Abyss into a 10-foot Emanation originating from you, producing one Abyssal Effect (roll 1d6). If an effect requires a save, DC = your spell save DC. Once used, regain on a Long Rest or spend 2 Sorcery Points to restore.</p>
     </description>
@@ -484,7 +487,7 @@
     </rules>
   </element>
 
-  <element name="Abyssal Effects" type="Table" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_ABYSSAL_EFFECTS">
+  <element name="Abyssal Effects" type="Table" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_ABYSSAL_EFFECTS">
     <description>
       <p>Roll 1d6 for the Abyssal Aura effect.</p>
     </description>
@@ -500,7 +503,7 @@
     </sheet>
   </element>
 
-  <element name="Abyssal Conduit" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_ABYSSAL_CONDUIT">
+  <element name="Abyssal Conduit" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_ABYSSAL_CONDUIT">
     <description>
       <p>Aura Expansion: Abyssal Aura becomes 20-foot Emanation. Controlled Chaos: When rolling on Abyssal Effects, roll twice and choose; if both dice match, choose any effect.</p>
     </description>
@@ -512,7 +515,7 @@
     </rules>
   </element>
 
-  <element name="Fiendish Servant" type="Archetype Feature" source="UA2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_FIENDISH_SERVANT">
+  <element name="Fiendish Servant" type="Archetype Feature" source="Unearthed Arcana 2026 Villainous Options" id="ID_WOTC_UA2026_SORCERER_FIENDISH_SERVANT">
     <description>
       <p>You can cast Summon Fiend without a material component. You can cast it once without a spell slot and regain that use on a Long Rest. When cast this way, the summoned fiend must be a Demon.</p>
     </description>
