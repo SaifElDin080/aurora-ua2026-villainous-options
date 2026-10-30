@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <name>UA2026 - Villainous Options</name>
+    <description>Contains four subclasses from Unearthed Arcana 2026 Villainous Options.</description>
+    <author url="http://dnd.wizards.com/articles/features">Wizards of the Coast</author>
+    <update version="0.0.1">
+      <file name="UA2026-VillainousOptions.xml" url="local/UA2026-VillainousOptions.xml" />
+    </update>
+  </info>
+
+  <files>
+    <file name="UA2026-VillainousOptions.xml" url="local/UA2026-VillainousOptions.xml" />
+  </files>
+</index>
