@@ -5,11 +5,11 @@
     <description>Index for UA2026 Villainous Options package (four subclasses).</description>
     <author url="http://dnd.wizards.com/articles/features">Wizards of the Coast</author>
     <update version="0.0.1">
-      <file name="UA2026-VillainousOptions.xml" url="https://raw.githubusercontent.com/&lt;your-username&gt;/aurora-ua2026-villainous-options/main/UA2026-VillainousOptions.xml" />
+      <file name="UA2026-VillainousOptions.xml" url="https://raw.githubusercontent.com/SaifElDin080/aurora-ua2026-villainous-options/refs/heads/main/UA2026-VillainousOptions.xml" />
     </update>
   </info>
 
   <files>
-    <file name="UA2026-VillainousOptions.xml" url="https://raw.githubusercontent.com/&lt;your-username&gt;/aurora-ua2026-villainous-options/main/UA2026-VillainousOptions.xml" />
+    <file name="UA2026-VillainousOptions.xml" url="https://raw.githubusercontent.com/SaifElDin080/aurora-ua2026-villainous-options/refs/heads/main/UA2026-VillainousOptions.xml" />
   </files>
 </index>
